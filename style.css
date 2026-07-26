@@ -13,12 +13,18 @@ body{
 /* Navigation */
 
 nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
     background:#003366;
     color:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
+    padding:18px 60px;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
 }
 
 nav h2{
@@ -47,6 +53,7 @@ nav ul li a:hover{
 /* Hero */
 
 .hero{
+    margin-top:80px;
     height:90vh;
     background:linear-gradient(to right,#003366,#0059b3);
     display:flex;
