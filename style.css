@@ -323,3 +323,44 @@ nav ul li a:hover{
     text-align:center;
     font-size:14px;
 }
+/* ITR Section */
+
+.itr{
+    padding:80px 40px;
+    background:#ffffff;
+    text-align:center;
+}
+
+.itr-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.itr h2{
+    font-size:40px;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.itr p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.itr-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.itr-list div{
+    background:#f4f7fc;
+    padding:18px;
+    border-radius:10px;
+    font-weight:bold;
+    color:#003366;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
