@@ -364,3 +364,22 @@ nav ul li a:hover{
     color:#003366;
     box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
+/* Tax Calculator */
+
+.calculator{
+    padding:140px 20px 80px;
+    text-align:center;
+    background:#f5f7fa;
+    min-height:100vh;
+}
+
+.calculator h1{
+    color:#003366;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.calculator p{
+    font-size:20px;
+    color:#555;
+}
