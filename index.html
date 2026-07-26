@@ -6,6 +6,7 @@
     <title>CA G&G</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
@@ -26,14 +27,16 @@
 
 <section class="hero">
     <div class="hero-content">
-        <h1>Welcome to CA G&G</h1>
+        <h1 data-aos="fade-right">Welcome to CA G&G</h1>
 
         <p>
             Your trusted partner for Income Tax, GST,
             Accounting, Audit and Financial Consultancy.
         </p>
 
-        <a href="tel:+918121375961" class="btn">📞 Call Now</a>
+       <a href="tel:+918121375961" class="btn" data-aos="zoom-in">
+    Call Now
+</a>
 
 <a href="https://wa.me/918121375961" class="btn whatsapp-btn" target="_blank">
     💬 WhatsApp
@@ -230,5 +233,13 @@
    target="_blank">
     💬
 </a>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
 </body>
 </html>
