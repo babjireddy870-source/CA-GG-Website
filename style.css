@@ -795,3 +795,77 @@ nav ul li a:hover{
     }
 
 }
+/* =========================================
+   WELCOME TITLE ANIMATION
+========================================= */
+
+.welcome-title{
+    font-size:50px;
+    font-weight:700;
+    color:white;
+
+    opacity:0;
+
+    animation:
+        welcomeZoom 1.2s ease-out forwards,
+        welcomeGlow 2s ease-in-out 1.2s infinite alternate;
+}
+
+
+/* Firm name gold highlight */
+
+.welcome-title span{
+    color:#FFD700;
+}
+
+
+/* Zoom + Fade Animation */
+
+@keyframes welcomeZoom{
+
+    0%{
+        opacity:0;
+        transform:scale(0.6) translateY(40px);
+        letter-spacing:8px;
+    }
+
+    60%{
+        opacity:1;
+        transform:scale(1.05) translateY(0);
+    }
+
+    100%{
+        opacity:1;
+        transform:scale(1);
+        letter-spacing:0;
+    }
+}
+
+
+/* Soft Glow Animation */
+
+@keyframes welcomeGlow{
+
+    0%{
+        text-shadow:
+        0 0 5px rgba(255,215,0,0.3);
+    }
+
+    100%{
+        text-shadow:
+        0 0 10px rgba(255,215,0,0.8),
+        0 0 20px rgba(255,215,0,0.4);
+    }
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .welcome-title{
+        font-size:36px;
+        white-space:normal;
+    }
+
+}
