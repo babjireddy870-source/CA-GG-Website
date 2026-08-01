@@ -869,24 +869,92 @@ nav ul li a:hover{
     }
 
 }
-/* HEADER LOGO */
+/* =========================================
+   HEADER LOGO - LARGE
+========================================= */
 
 .logo{
     display:flex;
+    flex-direction:column;
     align-items:center;
+    justify-content:center;
     text-decoration:none;
+    min-width:240px;
 }
 
+
+/* Bigger Logo */
+
 .logo img{
-    width:190px;
-    height:65px;
+    width:230px;
+    height:105px;
     object-fit:contain;
     display:block;
 }
 
+
+/* Text Under Logo */
+
+.logo-text{
+    text-align:center;
+    margin-top:3px;
+    line-height:1.2;
+}
+
+.logo-text strong{
+    display:block;
+    color:#FFD700;
+    font-size:20px;
+    letter-spacing:0.5px;
+}
+
+.logo-text span{
+    display:block;
+    color:white;
+    font-size:12px;
+    margin-top:3px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+
+/* Make Header Taller */
+
+nav{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+/* Because header is taller */
+
+.hero{
+    margin-top:145px;
+}
+
+
+/* ================= MOBILE ================= */
+
 @media(max-width:768px){
+
+    .logo{
+        min-width:auto;
+    }
+
     .logo img{
-        width:150px;
-        height:55px;
+        width:180px;
+        height:80px;
+    }
+
+    .logo-text strong{
+        font-size:17px;
+    }
+
+    .logo-text span{
+        font-size:10px;
+    }
+
+    .hero{
+        margin-top:0;
     }
 }
